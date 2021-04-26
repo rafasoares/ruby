@@ -5408,6 +5408,8 @@ Init_Numeric(void)
     rb_define_method(rb_cInteger, "succ", int_succ, 0);
     rb_define_method(rb_cInteger, "next", int_succ, 0);
     rb_define_method(rb_cInteger, "pred", int_pred, 0);
+    rb_define_method(rb_cInteger, "prev", int_pred, 0);
+    rb_define_method(rb_cInteger, "previous", int_pred, 0);
     rb_define_method(rb_cInteger, "chr", int_chr, -1);
     rb_define_method(rb_cInteger, "to_f", int_to_f, 0);
     rb_define_method(rb_cInteger, "floor", int_floor, -1);
